@@ -33,7 +33,7 @@ app.get('/api/health', (req, res) =>
 
 // -------- SERVE FRONTEND --------
 
-const frontendPath = path.join(__dirname, "../frontend/dist");
+const frontendPath = path.join(__dirname, "../frontend/build");
 
 app.use(express.static(frontendPath));
 
