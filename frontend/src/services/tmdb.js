@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const BACKEND = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
-const IMAGE_SERVER = process.env.REACT_APP_IMAGE_URL || 'http://localhost:5000';
+const BACKEND = process.env.REACT_APP_API_URL || 'https://movie-platform-rbgr.onrender.com/api';
+const IMAGE_SERVER = process.env.REACT_APP_IMAGE_URL || 'https://movie-platform-rbgr.onrender.com';
 
 const tmdb = axios.create({ baseURL: `${BACKEND}/tmdb` });
 
