@@ -1,10 +1,11 @@
-# 🎬 CinemaVerse — Full Stack Movie Discovery Platform
+# 🎬 CinemaVerse Full Stack Movie Discovery Platform
 
 A production-ready movie discovery platform built with React, Redux Toolkit, Node.js, Express, and MongoDB.
 
 ---
 
 ## 🚀 Features
+
 
 ### Frontend
 - 🎥 **Hero Carousel** — Auto-rotating trending content with full backdrop
@@ -94,12 +95,9 @@ cinemaverse/
 
 ## ⚙️ Setup Instructions
 
-### 1. Get a TMDB API Key
-1. Go to [https://www.themoviedb.org/](https://www.themoviedb.org/)
-2. Create a free account → Settings → API → Request an API key
-3. Copy your API key (v3 auth)
 
-### 2. Backend Setup
+
+### 1. Backend Setup
 
 ```bash
 cd backend
@@ -116,7 +114,7 @@ npm run dev
 # Server runs on http://localhost:5000
 ```
 
-### 3. Frontend Setup
+### 2. Frontend Setup
 
 ```bash
 cd frontend
@@ -131,7 +129,7 @@ npm start
 # App runs on http://localhost:3000
 ```
 
-### 4. Create Admin User
+### 3. Create Admin User
 After registering normally, open MongoDB Compass or mongosh and update your user's role:
 ```js
 db.users.updateOne({ email: "your@email.com" }, { $set: { role: "admin" } })
